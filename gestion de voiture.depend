@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1736694278 source:c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\main.c
+	<stdio.h>
+	<stdlib.h>
+	"voiture.h"
+
+1736692863 c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\voiture.h
+
+1736694255 source:c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\voiture.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"voiture.h"
+
