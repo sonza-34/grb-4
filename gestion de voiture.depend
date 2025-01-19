@@ -1,14 +1,35 @@
-# depslib dependency file v1.0
-1736694278 source:c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\main.c
-	<stdio.h>
-	<stdlib.h>
-	"voiture.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include"voiture.h"
+int main()
+{
+ int choix;
 
-1736692863 c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\voiture.h
+  saisirNom();
 
-1736694255 source:c:\users\gebruiker\onedrive\bureau\preparation\gestion de voiture\voiture.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"voiture.h"
+ do{
+    printf("********Menu:********\n\n\n");
+    printf("1-ajouter un voiture \n");
+    printf("2-affichier les viture \n");
+    printf("3-modifier un voiture \n");
+    printf("4-supprime un voiture \n");
+    printf("5-rechrche un voiture \n");
+    printf("6-trier un voiture \n");
+    printf("0-quitter \n");
+    printf("donner votre choix : ");scanf("%d",&choix);
+    switch(choix){
+        case 1: ajouterVoiture();break;
+        case 2:affichierVoiture() ;break;
+        case 3: modifierVoiture();break;
+        case 4: supprimerVoiture() ;break;
+        case 5:rechrcherVoiture();break;
+        case 6: trierVoiture();break;
+        case 0:printf("Fin \n") ;break;
+        default : printf("erreur , entre dans l'intervalle [0-6]\n");
+    }
+
+ }while(choix!=0);
+    return 0;
+}
+
 
